@@ -1,14 +1,15 @@
 # Unified Legal Assistance
 
-Unified legal assistance platform combining Legal Query, Judgment Analysis, Layman Summarization, translation, and Family Law Assistant in one Next.js frontend.
+This repository is the new home for the unified Legal Assistance + Family Law Assistant project.
 
-## Architecture
+## Upload status
+
+The repository and `feature/unified-legal-assistance-ui` branch are initialized. The complete application source tree is **not yet present** in this branch. The full source bundle and a Windows push helper are provided separately in the conversation download `ai-legal-assistance-unified-ready.zip`.
+
+## Intended architecture
 - `vercel_frontend/`: unified Next.js frontend
-- `backend/`: Legal Assistance FastAPI service
-- AI/model services and supporting workflows remain in their existing directories
-- Family Law API remains an independently deployed backend; configure its URL in the frontend environment
+- `backend/`: existing Legal Assistance FastAPI service
+- Family Law API remains an independently deployed FastAPI backend initially
 
-## Setup
-See `GITHUB_SETUP.md`, `HANDOVER.md`, `RUN_STATUS.md`, and `vercel_frontend/FRONTEND_REDESIGN_NOTES.md`.
-
-Never commit `.env` files, API keys, database credentials, or production secrets.
+## Safety
+Never commit real `.env` files, API keys, database credentials, private keys, model weights, or production secrets. Keep `.env.example` files only.
